@@ -4,6 +4,8 @@ import java.util.*;
 
 public class VehicleEntity {
     
+    private VehicleOwnerEntity owner;
+    private Set<VehicleServiceHistoryEntryEntity> serviceHistory;
     private String licenseNumber;
     private String brand;
     private Integer model;
@@ -24,10 +26,6 @@ public class VehicleEntity {
 
     public VehicleEntity() {
     }
-
-    private VehicleOwnerEntity owner;
-
-    private Set<VehicleServiceHistoryEntryEntity> serviceHistory;
 
     public String getLicenseNumber() {
         return licenseNumber;

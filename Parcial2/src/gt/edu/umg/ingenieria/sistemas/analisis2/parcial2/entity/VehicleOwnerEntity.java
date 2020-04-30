@@ -4,8 +4,8 @@ import java.util.*;
 
 public class VehicleOwnerEntity {
     
-    public String fullName;
-    public String dpi;
+    private String fullName;
+    private String dpi;
 
     public VehicleOwnerEntity() {
     }
