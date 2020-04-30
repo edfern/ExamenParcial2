@@ -115,7 +115,13 @@ public class MainForm extends javax.swing.JFrame {
         
         System.out.println("---------------------------");
         System.out.println("Combo PREMIUN");
-        System.out.println("Se realizará un lavado al motor, también se le cambiará el aceite y por último se hará una revisión a la bateria");
+        System.out.println("Se realizaran los siguientes servicios: ");
+        System.out.println("1. \tLavado de Motor,\n" +
+        "2. \tCambio de aceite al motor,\n" +
+        "3. \tRevisión de bateria.\n" +
+        "4. \tRevisión de luces interiores,\n" +
+        "5. \tRotación de llantas,\n" +
+        "6 \tInstalacion de tapón de tanque de combustible\n");
         IVehicleReceiptService receiptBay = new VehicleReceipt();
         ServiceOrderEntity order = receiptBay.receiveVehicle(this.txtLicenseNumber.getText());
         IEngineRepairService engineBay = new EngineRepairService();
@@ -136,9 +142,13 @@ public class MainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_executeComboPREMIUM
 
     private void executeComboECONOMIC(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_executeComboECONOMIC
-        System.out.println("---------------------------");
-        System.out.println("Combo PREMIUN");
-        System.out.println("Se realizará un lavado al motor, también se le cambiará el aceite y por último se hará una revisión a la bateria");
+         System.out.println("---------------------------");
+        System.out.println("Combo ECONOMIC");
+        System.out.println("Se realizaran los siguientes servicios: ");
+        System.out.println("1. \tRevisión de batería y su nivel\n" +
+        "2. \tLimpieza de tapicería\n" +
+        "3. \tCambio de filtro de aceite.\n" +
+        "4. \tServicio al sistema de enfriamiento cada 80,000km\n" );
         
         IVehicleReceiptService receiptBay = new VehicleReceipt();
         ServiceOrderEntity order = receiptBay.receiveVehicle(this.txtLicenseNumber.getText());
@@ -159,14 +169,11 @@ public class MainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_executeComboECONOMIC
 
     private void executeComboExample(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_executeComboExample
+        
         System.out.println("Combo Ejemplo");
-        
         System.out.println("Se realizará un cambio de aceite y rotación de llantas. Por último, un lavado exterior.");
-        
         IVehicleReceiptService receiptBay = new VehicleReceipt();
-        
         ServiceOrderEntity order = receiptBay.receiveVehicle(this.txtLicenseNumber.getText());
-        
         System.out.println("Se trabajará el vehículo con placas " + order.getVehicle().getLicenseNumber() + " marca " + order.getVehicle().getBrand() + " color " + order.getVehicle().getColor() + " modelo " + order.getVehicle().getModel());
     }//GEN-LAST:event_executeComboExample
 

@@ -1,11 +1,9 @@
 package gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.dao;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
+
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.ProductEntity;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.SparePartEntity;
-import java.util.*;
-import javax.swing.text.html.HTMLEditorKit;
-import javax.xml.bind.ParseConversionEvent;
+
 
 public class InventoryDao implements IInventoryDao {
 
