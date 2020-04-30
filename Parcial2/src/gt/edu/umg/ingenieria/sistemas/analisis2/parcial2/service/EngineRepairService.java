@@ -33,6 +33,7 @@ public class EngineRepairService implements IEngineRepairService {
         System.out.println("Asignando mecánico");
         
         String nameMec =  employee.getEmployee(1);
+        
         VehicleServiceHistoryEntryEntity orderSer = new VehicleServiceHistoryEntryEntity();
         
         System.out.println("Se le ha asignado el mecánico : " + nameMec);
@@ -46,6 +47,9 @@ public class EngineRepairService implements IEngineRepairService {
         orderSer.setServiceDescription("Lavado de Motor");
         orderSer.setRecommendation("El mecánico: Recomiendo que le haga un servicio de lavado de motor cada 4 meses o 30,000KM ");
         
+        IInventoryDao inv = new InventoryDao();
+        
+        orderSer.setTools(inv.getTools(2).getNameProduct() );
         
         IServiceDao service = new ServiceDao();
         
@@ -86,6 +90,9 @@ public class EngineRepairService implements IEngineRepairService {
             orderSer.setDate(new Date());
             orderSer.setNameBay(bayMotor);
             orderSer.setServiceDescription("Cambio de aceite al motor");
+        
+            orderSer.setTools(inv.getTools(1).getNameProduct()+ ", "+ inv.getTools(2).getNameProduct() );
+            
             orderSer.setRecommendation("Mécánico: Recomiendo que le haga un cambio de aciete al motor cada 5 meses o 50,000KM y recomiendo\n"
                     + "utilizar el producto "+ namPro
             );

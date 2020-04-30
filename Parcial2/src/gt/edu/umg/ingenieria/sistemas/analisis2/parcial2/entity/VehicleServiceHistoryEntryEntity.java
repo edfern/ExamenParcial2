@@ -8,6 +8,7 @@ public class VehicleServiceHistoryEntryEntity {
     public Date date;
     public String serviceDescription;
     public String Recommendation;
+    public String tools;
     
     public VehicleServiceHistoryEntryEntity() {
     }
@@ -43,6 +44,19 @@ public class VehicleServiceHistoryEntryEntity {
     public void setRecommendation(String Recommendation) {
         this.Recommendation = Recommendation;
     }
+
+    public String getTools() {
+        return tools;
+    }
+
+    public void setTools(String tools) {
+        this.tools = tools;
+    }
+
+    
+    
+    
+    
 
     
 }

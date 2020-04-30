@@ -11,6 +11,7 @@ public class VehicleEntity {
     private String typeEngine;
     private String typeBatery;
     private String typeLightsInter;
+    private String typeTires;
 
     public String getTypeEngine() {
         return typeEngine;
@@ -90,7 +91,14 @@ public class VehicleEntity {
     public void setTypeLightsInter(String typeLightsInter) {
         this.typeLightsInter = typeLightsInter;
     }
-    
 
+    public String getTypeTires() {
+        return typeTires;
+    }
+
+    public void setTypeTires(String typeTires) {
+        this.typeTires = typeTires;
+    }
+    
     
 }

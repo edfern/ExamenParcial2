@@ -7,8 +7,10 @@ import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.ProductEntity;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.ServiceOrderEntity;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.VehicleEntity;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.BrakeRepairService;
+import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.CustomsService;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.EngineRepairService;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.IBrakeRepairService;
+import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.ICustomsService;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.IEngineRepairService;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.IQAControlService;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.service.IVehicleReceiptService;
@@ -154,13 +156,19 @@ public class MainForm extends javax.swing.JFrame {
         
         engineBay.EngineOilChange(order);
         
-        IQAControlService beteryBay = new QAControlService();
+        IBrakeRepairService beteryBay = new BrakeRepairService();
+        IBrakeRepairService lightsBay = new BrakeRepairService();
+        IBrakeRepairService tireBay = new BrakeRepairService();
+        ICustomsService customsBay = new CustomsService();
         
         beteryBay.batteyReview(order);
         
-        IQAControlService lightsBay = new QAControlService();
-        
         lightsBay.interiorlights(order);
+        
+        tireBay.tireRotation(order);
+        
+        customsBay.fueltankInstallation(order);
+        
         
         
             

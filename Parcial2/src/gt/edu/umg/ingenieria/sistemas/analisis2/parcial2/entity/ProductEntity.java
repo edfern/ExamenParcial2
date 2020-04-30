@@ -11,7 +11,6 @@ public class ProductEntity {
     private String nameProduct;
     private String typeProduct;
     private String descriptionProduct;
-    private int existencias;
 
     public int getIdProduct() {
         return idProduct;
@@ -43,14 +42,6 @@ public class ProductEntity {
 
     public void setDescriptionProduct(String descriptionProduct) {
         this.descriptionProduct = descriptionProduct;
-    }
-
-    public int getExistencias() {
-        return existencias;
-    }
-
-    public void setExistencias(int existencias) {
-        this.existencias = existencias;
     }
 
     

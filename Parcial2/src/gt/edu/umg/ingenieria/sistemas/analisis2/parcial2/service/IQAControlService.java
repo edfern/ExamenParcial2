@@ -5,7 +5,6 @@ import java.util.*;
 
 public interface IQAControlService {
     
-    public void batteyReview(ServiceOrderEntity order);
-    public void interiorlights(ServiceOrderEntity order);
+    
 
 }

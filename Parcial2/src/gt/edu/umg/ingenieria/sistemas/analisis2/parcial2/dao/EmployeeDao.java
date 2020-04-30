@@ -1,5 +1,6 @@
 package gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.dao;
 
+import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.AssistantEntity;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.MechanicEntity;
 import java.util.*;
 
@@ -44,6 +45,28 @@ public class EmployeeDao implements IEmployeeDao {
         }
         
         return error;
+    }
+
+    @Override
+    public AssistantEntity getAssistant(int employeeID) {
+        
+        
+        if(employeeID == 1){
+        
+        AssistantEntity assi = new AssistantEntity();
+        
+        assi.setFullname("Esvin Gustavo Abaj Adolfo");
+        assi.setIdAssistant(employeeID);
+        assi.setBirthDate("15/08/90");
+        assi.setDirection("Estados Unidos");
+        assi.setPhone("789564521");
+        assi.setExperience("reparar y renovar las llantas");
+        assi.setWorkArea("reparación de llantas");
+        
+        return assi;
+        }
+        
+        return null;
     }
 
 }
