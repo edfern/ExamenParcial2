@@ -12,6 +12,7 @@ public class VehicleEntity {
     private String typeBatery;
     private String typeLightsInter;
     private String typeTires;
+    private int kilometraje;
 
     public String getTypeEngine() {
         return typeEngine;
@@ -98,6 +99,14 @@ public class VehicleEntity {
 
     public void setTypeTires(String typeTires) {
         this.typeTires = typeTires;
+    }
+
+    public int getKilometraje() {
+        return kilometraje;
+    }
+
+    public void setKilometraje(int kilometraje) {
+        this.kilometraje = kilometraje;
     }
     
     

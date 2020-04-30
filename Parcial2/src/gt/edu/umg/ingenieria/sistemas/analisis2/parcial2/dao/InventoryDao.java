@@ -1,5 +1,6 @@
 package gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.dao;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.ProductEntity;
 import gt.edu.umg.ingenieria.sistemas.analisis2.parcial2.entity.SparePartEntity;
 import java.util.*;
@@ -85,14 +86,32 @@ public class InventoryDao implements IInventoryDao {
     public SparePartEntity getProduct(int idProduct) {
         
         SparePartEntity product = new SparePartEntity();
+        int numRand = (int) (Math.random()*50);
         
+        if(idProduct == 1){
         product.setNameProduct("Tapón de tanque de combustible");
         product.setIdProduct(idProduct);
         product.setTypeProduct("Customs");
         product.setDescriptionProduct("Diámetro de la carcasa. 2.78 pulgadas. Diámetro del cuello: 1.78 pulgadas. Profundidad de la tapa: 2.41 pulgadas");
-        product.setExistencias(16);
+        product.setExistencias(numRand);
+           
+        return product;}
+        if(idProduct == 2){
+        product.setNameProduct("Filto de aceite");
+        product.setIdProduct(idProduct);
+        product.setTypeProduct("Customs");
+        product.setDescriptionProduct("CLIO II Furgón (SB0/1/2_)");
+        product.setExistencias(numRand);
+        return product;}
+        if(idProduct == 3){
+        product.setNameProduct("Filtro de aceite");
+        product.setIdProduct(idProduct);
+        product.setTypeProduct("Customs");
+        product.setDescriptionProduct("TRAFIC II Autobús (JL)");
+        product.setExistencias(numRand);
+        return product;}
+        return null;
         
-        return product;
     }
 
     @Override
@@ -110,9 +129,39 @@ public class InventoryDao implements IInventoryDao {
         return tools;
         
         } if (idProduct == 2 ){
-            tools.setNameProduct("Llave de cruz");
+            tools.setNameProduct("Extractor");
+            tools.setTypeProduct("Para vehiculo");
+            tools.setDescriptionProduct("Etamaño de 10 mm");
+            tools.setIdProduct(idProduct);
+            return tools;
+        } if (idProduct == 3 ){
+            tools.setNameProduct("llave de tubo");
             tools.setTypeProduct("Para vehiculo");
             tools.setDescriptionProduct("Etamaño de 22 mm");
+            tools.setIdProduct(idProduct);
+            return tools;
+        } if (idProduct == 4 ){
+            tools.setNameProduct("Mordazas");
+            tools.setTypeProduct("Para vehiculo");
+            tools.setDescriptionProduct("Etamaño de 10 mm");
+            tools.setIdProduct(idProduct);
+            return tools;
+        } if (idProduct == 5 ){
+            tools.setNameProduct("Entenallas");
+            tools.setTypeProduct("Para vehiculo");
+            tools.setDescriptionProduct("Etamaño de 20 mm");
+            tools.setIdProduct(idProduct);
+            return tools;
+        }if (idProduct == 6 ){
+            tools.setNameProduct("Jabon Espuma");
+            tools.setTypeProduct("Para tapiceria");
+            tools.setDescriptionProduct("100 unidades");
+            tools.setIdProduct(idProduct);
+            return tools;
+        }if (idProduct == 7 ){
+            tools.setNameProduct("Limpiador");
+            tools.setTypeProduct("Para tapiceria");
+            tools.setDescriptionProduct("Marca: ARMORALL Modelo# 78091 SKU# 87747. ARMORALL.");
             tools.setIdProduct(idProduct);
             return tools;
         }

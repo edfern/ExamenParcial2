@@ -7,5 +7,7 @@ public interface IEngineRepairService {
     
     public void MotorWash(ServiceOrderEntity order);
     public void EngineOilChange(ServiceOrderEntity order);
+    public void BatteryCheckandLevel(ServiceOrderEntity order);
+    public void systemCooling(ServiceOrderEntity order);
 
 }

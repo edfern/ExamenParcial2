@@ -41,18 +41,16 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="btnExecuteCombo4" max="32767" attributes="0"/>
                       <Component id="btnExecuteComboLCS" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnExecuteComboLCR" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnExecuteRRT" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnExecuteComboLLI" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnExecuteComboPREMIUM" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnExecuteECONOMIC" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="lblLicenseNumber" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="txtLicenseNumber" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="243" max="32767" attributes="0"/>
+                  <EmptySpace pref="226" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -67,41 +65,29 @@
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Component id="btnExecuteComboLCS" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnExecuteComboLCR" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnExecuteComboPREMIUM" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnExecuteRRT" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnExecuteComboLLI" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnExecuteCombo4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="104" max="32767" attributes="0"/>
+                  <Component id="btnExecuteECONOMIC" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="180" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnExecuteComboLCR">
+        <Component class="javax.swing.JButton" name="btnExecuteComboPREMIUM">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ejecutar combo LCR"/>
+            <Property name="text" type="java.lang.String" value="Ejecutar combo PREMIUM"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="executeComboLCR"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="executeComboPREMIUM"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnExecuteRRT">
+        <Component class="javax.swing.JButton" name="btnExecuteECONOMIC">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ejecutar combo RRT"/>
+            <Property name="text" type="java.lang.String" value="Ejecutar combo ECONOMIC"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="executeComboRRT"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnExecuteComboLLI">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Ejecutar combo LLI"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="executeComboLLI"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="executeComboECONOMIC"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnExecuteComboLCS">
@@ -118,14 +104,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtLicenseNumber">
-        </Component>
-        <Component class="javax.swing.JButton" name="btnExecuteCombo4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Ejecutar combo LCS"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="executeComboLCS"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>

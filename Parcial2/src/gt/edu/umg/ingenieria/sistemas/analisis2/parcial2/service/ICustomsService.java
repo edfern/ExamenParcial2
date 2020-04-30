@@ -6,5 +6,6 @@ import java.util.*;
 public interface ICustomsService {
     
     public void fueltankInstallation (ServiceOrderEntity order);
+    public void OilFilterChange (ServiceOrderEntity order);
 
 }
